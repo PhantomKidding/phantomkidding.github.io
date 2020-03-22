@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>OpenCV cmake</h1>
+sudo cmake -D CMAKE_BUILD_TYPE=RELEASE 
+    -D CMAKE_INSTALL_PREFIX=/usr/local 
+    -D ENABLE_CXX11=ON 
+    -D WITH_CUDA=ON 
+    -D INSTALL_PYTHON_EXAMPLES=ON 
+    -D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules 
+    -D OPENCV_ENABLE_NONFREE=ON 
+    -D INSTALL_C_EXAMPLES=OFF 
+    -D BUILD_NEW_PYTHON_SUPPORT=ON 
+    -D BUILD_opencv_python3=ON 
+    -D HAVE_opencv_python3=ON 
+    -D CUDA_NVCC_FLAGS=--expt-relaxed-constexpr 
+    -D PYTHON_DEFAULT_EXECUTABLE=/usr/local/bin/python3.7 
+    -D PYTHON3_EXECUTABLE=/usr/local/bin/python3.7 
+    -D BUILD_EXAMPLES=ON ..
+</body>
+</html>
